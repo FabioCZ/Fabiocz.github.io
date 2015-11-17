@@ -20,10 +20,10 @@ Roundabouts are an efficient alternative to traditional 4-way stops. However, th
 The roundabout can be thought of as a merry-go-round
 
 #From this:
-![Merry-go-round](https://upload.wikimedia.org/wikipedia/commons/d/d8/Man%C3%A8geLR1.jpg = 640x480)
+![Merry-go-round](https://upload.wikimedia.org/wikipedia/commons/d/d8/Man%C3%A8geLR1.jpg)
 
 #To this:
-![Roundabout](https://upload.wikimedia.org/wikipedia/commons/d/d4/LUMC-rotonde.JPG =640x480)
+![Roundabout](https://upload.wikimedia.org/wikipedia/commons/d/d4/LUMC-rotonde.JPG)
 ## Technologies Used:
 Project is implemented in C# and will include a WinForms based visualization and controls. Intersections are modeled using QuickGraph .NET graph library.
 
