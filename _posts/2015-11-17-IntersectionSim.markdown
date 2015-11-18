@@ -27,6 +27,7 @@ The roundabout can be thought of as a merry-go-round with 'slots' for each car t
 
 #Diagram:
 ![Diagram](roundaboutdiagram.PNG)
+
 ## Technologies Used:
 Project is implemented in C# and will include a WinForms based visualization and controls. Intersections are modeled using QuickGraph .NET graph library.
 
