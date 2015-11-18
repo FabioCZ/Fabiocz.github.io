@@ -17,13 +17,16 @@ Roundabouts are an efficient alternative to traditional 4-way stops. However, th
 
 
 ## Implementation:
-The roundabout can be thought of as a merry-go-round
+The roundabout can be thought of as a merry-go-round with 'slots' for each car that is on the roundabout. Roundabout entry points are where pop in a car into a slot. We can then 'spin' the merry-go-round until the desired leave point is reached, where we pop the car out of the slot. To find optimal configurations under heavy traffic and prevent car starvation, I will utilize an intelligent algorith.
 
 #From this:
 ![Merry-go-round](https://upload.wikimedia.org/wikipedia/commons/d/d8/Man%C3%A8geLR1.jpg)
 
 #To this:
 ![Roundabout](https://upload.wikimedia.org/wikipedia/commons/d/d4/LUMC-rotonde.JPG)
+
+#Diagram:
+![Diagram](roundaboutdiagram.PNG)
 ## Technologies Used:
 Project is implemented in C# and will include a WinForms based visualization and controls. Intersections are modeled using QuickGraph .NET graph library.
 
