@@ -26,7 +26,7 @@ The roundabout can be thought of as a merry-go-round with 'slots' for each car t
 ![Roundabout](https://upload.wikimedia.org/wikipedia/commons/d/d4/LUMC-rotonde.JPG)
 
 #Diagram:
-![Diagram](roundaboutdiagram.PNG)
+![Diagram](https://raw.githubusercontent.com/FabioCZ/Fabiocz.github.io/master/roundaboutdiagram.PNG?token=ABYizHw7L0SvbNCrXZl1BTyEhdDUfIprks5WVTUpwA%3D%3D)
 
 ## Technologies Used:
 Project is implemented in C# and will include a WinForms based visualization and controls. Intersections are modeled using QuickGraph .NET graph library.
