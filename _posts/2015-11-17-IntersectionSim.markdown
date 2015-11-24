@@ -34,8 +34,11 @@ The efficiency of the roundabout will be measured based on the time it takes a c
 ##Video Demo:
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/4utwbuP06qo/0.jpg)](http://www.youtube.com/watch?v=4utwbuP06qo "Video Title")
 
+## User Interface Description:
+The user can choose the input parameters for each lane coming into the roundabout - traffic density (cars per minute) as well as the distribution of destination lanes. The duration of the simulation as well as the speed-up of the simulation can also be altered. At any point, the user can run the animation continuously, or choose to iterate second-by-second to facilitate easier inspection. A conventional roundabout implementation is provided for reference. After the simulation finishes, the user can analyze the simulation data (avg. time to get through roundabout etc.), as well as export this data into a .csv file.
+
 ## Technologies Used:
-Project is implemented in C# and will include a WinForms based visualization and controls. 
+Project is implemented in C# and will include a WinForms based visualization and controls. .NET data structures are used to store state data (`Queue<T>`, `List<T>` etc.)
 
 ## Links:
 * Source code: [https://github.com/FabioCZ/IntersectionSim](https://github.com/FabioCZ/IntersectionSim)
