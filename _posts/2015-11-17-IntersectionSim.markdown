@@ -47,7 +47,7 @@ The efficiency of the algorithm is measured by the average and maximum wait time
 The implemented Minimax algorith does very well at avoiding car starvation and prioritizing cars that have been waiting for some time. The graph below shows the difference between a conventional and intelligent roundabout. For a short simulation duration, cars do not stack up, and both implementions fare similarly. However, with longer simulation durations, cars stack up (especially with higher cars/minute ratios), and the intelligent algorithm outperforms the conventional one significantly.
 
 *Result Graph  and its corresponding table (all values in seconds)*
-->![Diagram]({{site.baseurl}}/../images/graph.png)<-
+<center>![Diagram]({{site.baseurl}}/../images/graph.png)</center>
 
 ->![Table]({{site.baseurl}}/../images/table.png)<-
 
