@@ -10,7 +10,7 @@ title: Fabio Gottlicher's blog
 email: g.fabio.cz@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to my blog and project presentation website.
-baseurl: /FabioCZ
+baseurl: ""
 url: "http://fabiocz.github.io/" # the base hostname & protocol for your site
 twitter_username: FabioG_CZ
 github_username:  FabioCZ
