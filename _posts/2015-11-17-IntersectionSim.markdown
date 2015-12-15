@@ -11,6 +11,7 @@ published: true
 Welcome to the project page for Intersection Simulator (aka Merry-Go-Round-About)
 
 ![Merry-go-round]({{site.baseurl}}/../images/merryGo.jpg)
+
 ## Project Introduction:
 
 As connected autonomous vehicles will become more and more common in the coming decades, this technology can be used to reduce traffic congestion, a big problem in major metropolitan areas.  Cars will be able to communicate with each other, as well as communicate with a central traffic management system. One interesting part of traffic control that can be evaluated is the use of roundabouts.
@@ -40,7 +41,7 @@ The efficiency of the algorithm is measured by the average and maximum wait time
 
 
 ##Video Demo:
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/4utwbuP06qo/0.jpg)](http://www.youtube.com/watch?v=4utwbuP06qo "Video Title")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/uild35AoGqg/0.jpg)](http://www.youtube.com/watch?v=uild35AoGqg "Video Title")
 
 ## Results:
 The implemented Minimax algorith does very well at avoiding car starvation and prioritizing cars that have been waiting for some time. The graph below shows the difference between a conventional and intelligent roundabout. For a short simulation duration, cars do not stack up, and both implementions fare similarly. However, with longer simulation durations, cars stack up (especially with higher cars/minute ratios), and the intelligent algorithm outperforms the conventional one significantly.
