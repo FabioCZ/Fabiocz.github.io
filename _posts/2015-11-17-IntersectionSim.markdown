@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Intersection Simulator"
-date:   2015-11-17 14:41:33 -0700
+title: Intersection Simulator
+date: "2015-11-17 14:41:33 -0700"
 categories: CS5600
+published: true
 ---
+
 
 
 Welcome to the project page for Intersection Simulator (aka Merry-Go-Round-About)
@@ -28,7 +30,7 @@ The efficiency of the roundabout will be measured based on the time it takes a c
 ![Roundabout](https://upload.wikimedia.org/wikipedia/commons/d/d4/LUMC-rotonde.JPG)
 
 #Diagram:
-![Diagram](roundaboutdiagram.PNG)
+![Diagram](![Diagram]({{site.baseurl}}/_posts/roundaboutdiagram.PNG)
 
 
 ##Video Demo:
