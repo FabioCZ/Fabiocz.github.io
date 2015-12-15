@@ -26,20 +26,21 @@ The roundabout can be thought of as a merry-go-round with 'slots' for each car t
 
 The efficiency of the algorithm is measured by the average and maximum wait time of all the cars on the roundabout at the time of decision making. A reference conventional roundabout is implemented as a control. The intelligent roundabout is implemented using a minimax algorithm. At each iteration of the roundabout state, all of the next possible steps are evaluated and the best one (lowest average wait time) is selected as the next step. Pseudocode for the MiniMax algorithm can be found below.
 
-```
-// from https://en.wikipedia.org/wiki/Minimax
-function minimax(node, depth, maximizingPlayer)
-    if depth = 0 or node is a terminal node
-        return the heuristic value of node
-    for each child of node
+
+
+    // from https://en.wikipedia.org/wiki/Minimax
+    function minimax(node, depth, maximizingPlayer)
+        if depth = 0 or node is a terminal node
+            return the heuristic value of node
+        for each child of node
         val := minimax(child, depth - 1, !maximizingPlayer)
             bestValue := -∞
             bestValue := min(bestValue, val)
     return bestValue
-```
+
 
 ##Video Demo:
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/4utwbuP06qo/0.jpg)](http://www.youtube.com/watch?v=4utwbuP06qo "Video Title")
+![IMAGE ALT TEXT](http://img.youtube.com/vi/4utwbuP06qo/0.jpg)](http://www.youtube.com/watch?v=4utwbuP06qo "Video Title")
 
 ## Results:
 The implemented Minimax algorith does very well at avoiding car starvation and prioritizing cars that have been waiting for some time. The graph below shows the difference between a conventional and intelligent roundabout. For a short simulation duration, cars do not stack up, and both implementions fare similarly. However, with longer simulation durations, cars stack up (especially with higher cars/minute ratios), and the intelligent algorithm outperforms the conventional one significantly.
