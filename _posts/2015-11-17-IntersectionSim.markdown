@@ -48,7 +48,7 @@ The implemented Minimax algorith does very well at avoiding car starvation and p
 
 *Result Graph  and its corresponding table (all values in seconds)*
 
-![Diagram]({{site.baseurl}}/../images/graph.png){: style="margin: auto"}
+![Diagram]({{site.baseurl}}/../images/graph.png){: .center-image }
 
 ![Table]({{site.baseurl}}/../images/table.png)
 
