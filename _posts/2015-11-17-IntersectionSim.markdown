@@ -28,7 +28,7 @@ The efficiency of the roundabout will be measured based on the time it takes a c
 ![Roundabout](https://upload.wikimedia.org/wikipedia/commons/d/d4/LUMC-rotonde.JPG)
 
 #Diagram:
-![Diagram](https://github.com/FabioCZ/Fabiocz.github.io/blob/master/roundaboutdiagram.PNG)
+![Diagram](roundaboutdiagram.PNG)
 
 
 ##Video Demo:
