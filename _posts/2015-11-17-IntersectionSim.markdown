@@ -10,7 +10,8 @@ published: true
 
 Welcome to the project page for Intersection Simulator (aka Merry-Go-Round-About)
 
-![Merry-go-round]({{site.baseurl}}/../images/merryGo.jpg)
+![Merry-go-round]({{site.baseurl}}/../images/merryGo.jpg){: .center-image }
+
 
 ## Project Introduction:
 
@@ -20,7 +21,8 @@ As connected autonomous vehicles will become more and more common in the coming 
 Roundabouts are an efficient alternative to traditional 4-way stops. However, they can suffer from starvation under heavy traffic flow. Additionally, human drivers do not always most efficiently utilize the gaps in traffic available to them, and increase congestion. This gap-management could be made more efficient using connected autonomous vehicles. This can reduce fuel costs and travel time, as well reduce carbon footprint from fossil fuel vehicles.
 
 
-![Diagram]({{site.baseurl}}/../images/roundaboutdiagram.PNG)
+![Diagram]({{site.baseurl}}/../images/roundaboutdiagram.PNG){: .center-image }
+
 
 ## Implementation:
 The roundabout can be thought of as a merry-go-round with 'slots' for each car that is on the roundabout. Roundabout entry points are where pop in a car into a slot. We can then 'spin' the merry-go-round until the desired leave point is reached, where we pop the car out of the slot. To find optimal configurations under heavy traffic and prevent car starvation, an intelligent algorithm is used. Starvation refers to some cars having to wait a lot longer to pass through the roundabout than other cars (see link at the bottom for more information).
@@ -41,7 +43,8 @@ The efficiency of the algorithm is measured by the average and maximum wait time
 
 
 ##Video Demo:
-->[![IMAGE ALT TEXT](http://img.youtube.com/vi/uild35AoGqg/0.jpg)](http://www.youtube.com/watch?v=uild35AoGqg "Video Title")<-
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/uild35AoGqg/0.jpg)](http://www.youtube.com/watch?v=uild35AoGqg "Video Title"){: .center-image }
+
 
 ## Results:
 The implemented Minimax algorith does very well at avoiding car starvation and prioritizing cars that have been waiting for some time. The graph below shows the difference between a conventional and intelligent roundabout. For a short simulation duration, cars do not stack up, and both implementions fare similarly. However, with longer simulation durations, cars stack up (especially with higher cars/minute ratios), and the intelligent algorithm outperforms the conventional one significantly.
@@ -50,7 +53,8 @@ The implemented Minimax algorith does very well at avoiding car starvation and p
 
 ![Diagram]({{site.baseurl}}/../images/graph.png){: .center-image }
 
-![Table]({{site.baseurl}}/../images/table.png)
+![Table]({{site.baseurl}}/../images/table.png){: .center-image }
+
 
 ## User Interface Description:
 The user can choose the input parameters for each lane coming into the roundabout - traffic density (cars per minute) as well as the distribution of destination lanes. The duration of the simulation as well as the speed-up of the simulation can also be altered. At any point, the user can run the animation continuously, or choose to iterate second-by-second to facilitate easier inspection. A conventional roundabout implementation is provided for reference. Also, to aid generating bulk data, user can choose to generate several runs of the simulation with random parameters (min/max for each parameter can be set). This data set generator can write results to a file for further analysis.
