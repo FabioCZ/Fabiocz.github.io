@@ -10,6 +10,7 @@ published: true
 
 Welcome to the project page for Intersection Simulator (aka Merry-Go-Round-About)
 
+![Merry-go-round]({{site.baseurl}}/../images/merryGo.PNG)
 ## Project Introduction:
 
 As connected autonomous vehicles will become more and more common in the coming decades, this technology can be used to reduce traffic congestion, a big problem in major metropolitan areas.  Cars will be able to communicate with each other, as well as communicate with a central traffic management system. One interesting part of traffic control that can be evaluated is the use of roundabouts.
@@ -18,32 +19,42 @@ As connected autonomous vehicles will become more and more common in the coming 
 Roundabouts are an efficient alternative to traditional 4-way stops. However, they can suffer from starvation under heavy traffic flow. Additionally, human drivers do not always most efficiently utilize the gaps in traffic available to them, and increase congestion. This gap-management could be made more efficient using connected autonomous vehicles. This can reduce fuel costs and travel time, as well reduce carbon footprint from fossil fuel vehicles.
 
 
+![Diagram]({{site.baseurl}}/../images/roundaboutdiagram.PNG)
+
 ## Implementation:
-The roundabout can be thought of as a merry-go-round with 'slots' for each car that is on the roundabout. Roundabout entry points are where pop in a car into a slot. We can then 'spin' the merry-go-round until the desired leave point is reached, where we pop the car out of the slot. To find optimal configurations under heavy traffic and prevent car starvation, an intelligent algorithm is used.
+The roundabout can be thought of as a merry-go-round with 'slots' for each car that is on the roundabout. Roundabout entry points are where pop in a car into a slot. We can then 'spin' the merry-go-round until the desired leave point is reached, where we pop the car out of the slot. To find optimal configurations under heavy traffic and prevent car starvation, an intelligent algorithm is used. Starvation refers to some cars having to wait a lot longer to pass through the roundabout than other cars (see link at the bottom for more information).
 
-The efficiency of the roundabout will be measured based on the time it takes a car to pass through the roundabout - we want to avoid starvation. For this, I am using a branch and bound algorith. At each iteration of the roundabout (iterations are taken every second), the state of the roundabout will be analyzed using B&B algorithm. The algorithm does not look ahead at cars that may have been scheduled by the simulation, but have not arrived at the roundabout yet - this is to simulate real world conditions.
+The efficiency of the algorithm is measured by the average and maximum wait time of all the cars on the roundabout at the time of decision making. A reference conventional roundabout is implemented as a control. The intelligent roundabout is implemented using a minimax algorithm. At each iteration of the roundabout state, all of the next possible steps are evaluated and the best one (lowest average wait time) is selected as the next step. Pseudocode for the MiniMax algorithm can be found below.
 
-#From this:
-![Merry-go-round](https://upload.wikimedia.org/wikipedia/commons/d/d8/Man%C3%A8geLR1.jpg)
-
-#To this:
-![Roundabout](https://upload.wikimedia.org/wikipedia/commons/d/d4/LUMC-rotonde.JPG)
-
-#Diagram:
-![Diagram]({{site.baseurl}}/../roundaboutdiagram.PNG)
-
+```
+// from https://en.wikipedia.org/wiki/Minimax
+function minimax(node, depth, maximizingPlayer)
+    if depth = 0 or node is a terminal node
+        return the heuristic value of node
+    for each child of node
+        val := minimax(child, depth - 1, !maximizingPlayer)
+            bestValue := -∞
+            bestValue := min(bestValue, val)
+    return bestValue
+```
 
 ##Video Demo:
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/4utwbuP06qo/0.jpg)](http://www.youtube.com/watch?v=4utwbuP06qo "Video Title")
 
+## Results:
+The implemented Minimax algorith does very well at avoiding car starvation and prioritizing cars that have been waiting for some time. The graph below shows the difference between a conventional and intelligent roundabout. For a short simulation duration, cars do not stack up, and both implementions fare similarly. However, with longer simulation durations, cars stack up (especially with higher cars/minute ratios), and the intelligent algorithm outperforms the conventional one significantly.
+
+![Diagram]({{site.baseurl}}/../images/graph.png)
+
 ## User Interface Description:
-The user can choose the input parameters for each lane coming into the roundabout - traffic density (cars per minute) as well as the distribution of destination lanes. The duration of the simulation as well as the speed-up of the simulation can also be altered. At any point, the user can run the animation continuously, or choose to iterate second-by-second to facilitate easier inspection. A conventional roundabout implementation is provided for reference. After the simulation finishes, the user can analyze the simulation data (avg. time to get through roundabout etc.), as well as export this data into a .csv file.
+The user can choose the input parameters for each lane coming into the roundabout - traffic density (cars per minute) as well as the distribution of destination lanes. The duration of the simulation as well as the speed-up of the simulation can also be altered. At any point, the user can run the animation continuously, or choose to iterate second-by-second to facilitate easier inspection. A conventional roundabout implementation is provided for reference. Also, to aid generating bulk data, user can choose to generate several runs of the simulation with random parameters (min/max for each parameter can be set). This data set generator can write results to a file for further analysis.
 
 ## Technologies Used:
 Project is implemented in C# and will include a WinForms based visualization and controls. .NET data structures are used to store state data (`Queue<T>`, `List<T>` etc.)
 
 ## Links:
 * Source code: [https://github.com/FabioCZ/IntersectionSim](https://github.com/FabioCZ/IntersectionSim)
-* QuickGraph: [http://quickgraph.codeplex.com/](http://quickgraph.codeplex.com/)
-* Branh and Bound: [https://en.wikipedia.org/wiki/Branch_and_bound](https://en.wikipedia.org/wiki/Branch_and_bound)
+* Releas page and Installer: [https://github.com/FabioCZ/IntersectionSim/releases](https://github.com/FabioCZ/IntersectionSim/releases)
+* Minimax: [https://en.wikipedia.org/wiki/Minimax](https://en.wikipedia.org/wiki/Minimax)
+* Starvation: [https://en.wikipedia.org/wiki/Starvation_(computer_science)](https://en.wikipedia.org/wiki/Starvation_(computer_science))
 * Images from: [http://wikipedia.org](http://wikipedia.org)
