@@ -3,7 +3,7 @@ layout: post
 title: Intersection Simulator
 date: "2015-11-17 14:41:33 -0700"
 categories: CS5600
-published: false
+published: true
 ---
 
 
