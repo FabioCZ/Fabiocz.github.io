@@ -16,5 +16,4 @@ twitter_username: FabioG_CZ
 github_username:  FabioCZ
 
 # Build settings
-markdown: kramdown:
- input: GFM
+markdown: kramdown
