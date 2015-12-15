@@ -46,7 +46,10 @@ The efficiency of the algorithm is measured by the average and maximum wait time
 ## Results:
 The implemented Minimax algorith does very well at avoiding car starvation and prioritizing cars that have been waiting for some time. The graph below shows the difference between a conventional and intelligent roundabout. For a short simulation duration, cars do not stack up, and both implementions fare similarly. However, with longer simulation durations, cars stack up (especially with higher cars/minute ratios), and the intelligent algorithm outperforms the conventional one significantly.
 
+* Result Graph  and its corresponding table (all values in seconds)*
 ![Diagram]({{site.baseurl}}/../images/graph.png)
+![Table]({{site.baseurl}}/../images/table.png)
+
 
 ## User Interface Description:
 The user can choose the input parameters for each lane coming into the roundabout - traffic density (cars per minute) as well as the distribution of destination lanes. The duration of the simulation as well as the speed-up of the simulation can also be altered. At any point, the user can run the animation continuously, or choose to iterate second-by-second to facilitate easier inspection. A conventional roundabout implementation is provided for reference. Also, to aid generating bulk data, user can choose to generate several runs of the simulation with random parameters (min/max for each parameter can be set). This data set generator can write results to a file for further analysis.
