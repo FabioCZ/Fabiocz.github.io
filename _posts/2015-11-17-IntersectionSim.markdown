@@ -50,7 +50,7 @@ The implemented Minimax algorith does very well at avoiding car starvation and p
 The user can choose the input parameters for each lane coming into the roundabout - traffic density (cars per minute) as well as the distribution of destination lanes. The duration of the simulation as well as the speed-up of the simulation can also be altered. At any point, the user can run the animation continuously, or choose to iterate second-by-second to facilitate easier inspection. A conventional roundabout implementation is provided for reference. Also, to aid generating bulk data, user can choose to generate several runs of the simulation with random parameters (min/max for each parameter can be set). This data set generator can write results to a file for further analysis.
 
 ## Technologies Used:
-Project is implemented in C# and will include a WinForms based visualization and controls. .NET data structures are used to store state data (`Queue<T>`, `List<T>` etc.)
+Project is implemented in C# and will include a WinForms based visualization and controls. .NET data structures are used to store state data (`Queue<T>`, `List<T>` etc.).
 
 ## Links:
 * Source code: [https://github.com/FabioCZ/IntersectionSim](https://github.com/FabioCZ/IntersectionSim)
