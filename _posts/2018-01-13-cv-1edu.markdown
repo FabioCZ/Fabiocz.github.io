@@ -1,0 +1,18 @@
+---
+layout: default
+img: cap.png
+category: CV
+title: Education
+description: |
+---
+## Utah State University
+
+#### Bachelor of Science - Computer Science, 2013 - 2016
+
+* **Key courses:** Advanced Algorithms, Graphical User Interface Development in C#, Dynamic Web Development,
+Operating Systems and Concurrency, Software Engineering, Game Development, Compiler Construction, Object
+Oriented Programming
+* **Extracurricular:** Sustainability Club, Uncommon Collective (Community Improvement Volunteering), Attended
+Hack UState hackathons - 2nd place at the Spring 2016 Hackathon
+* Dean's List, GPA: 3.65, ACT: 35
+

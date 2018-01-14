@@ -1,0 +1,39 @@
+---
+layout: default
+img: android.png
+category: CV
+title: Technologies
+description: |
+---
+## Mobile
+
+* Xamarin Android, iOS, Forms
+* Android Native - Java
+* Automation testing (Espresso, Xamarin UITest)
+* Hockey App deployment
+
+## Web
+
+* Angular 2, JQuery
+* Backend using Node.js, ASP.Net, Java frameworks
+
+## Languages and Technologies
+
+* C, C++
+* Java, Kotlin
+* JavaScript, TypeScript
+* C# (Windows Forms, UWP, NUnit)
+* SQL (SQL Server, SQLite), Liquibase
+* HTML/CSS
+* Bash, Python
+* Git, Github, JIRA, SVN
+* Bitrise, Jenkins CI
+
+## Languages (the spoken ones)
+
+* English
+* Czech
+* Slovak
+
+
+

@@ -1,0 +1,32 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: http://gottlicher.com
+title: K Fabio Göttlicher
+email: g.fabio.cz@gmai.com
+author: K Fabio Göttlicher
+description: > # "Write an awesome description for your new site here. 
+  Keano Fabricio Göttlicher's personal website.
+copyright: 'Copyright &copy; 2015 Keano Göttlicher. All Rights Reserved.'
+credits: 'Credits: <a href="https://github.com/swcool/landing-page-theme">Landing Page</a> is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>. Template licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a>'
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: facebook
+    url: https://facebook.com/FabioCZ
+  - title: github
+    url: https://github.com/FabioCZ
+  - title: linkedin
+    url: https://linkedin.com/in/FabioCZ
