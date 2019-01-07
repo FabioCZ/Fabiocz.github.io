@@ -8,9 +8,10 @@ description: |
 ## Mobile
 
 * Xamarin Android, iOS, Forms
-* Android Native - Java
+* Android Native - Java, Kotlin
 * Automation testing (Espresso, Xamarin UITest)
 * Hockey App deployment
+* Crash monitoring (VS App Center, Raygun)
 
 ## Web
 
@@ -28,8 +29,9 @@ description: |
 * Bash, Python
 * Git, Github, JIRA, SVN
 * Bitrise, Jenkins CI
+* Dependency injection/IoC - Dagger, MvvmCross, Guice
 
-## Languages (the spoken ones)
+## Spoken languages
 
 * English
 * Czech
