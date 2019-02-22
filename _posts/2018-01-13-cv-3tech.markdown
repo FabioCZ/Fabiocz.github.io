@@ -7,14 +7,15 @@ description: |
 ---
 ## Mobile
 
+* Android Native - Java, Kotlin
 * Xamarin Android, iOS, Forms
-* Android Native - Java
+* Libraries - Android Jetpack, Retrofit, Dagger
 * Automation testing (Espresso, Xamarin UITest)
 * Hockey App deployment
 
 ## Web
 
-* Angular 2, JQuery
+* Angular, JQuery
 * Backend using Node.js, ASP.Net, Java frameworks
 
 ## Languages and Technologies
@@ -29,11 +30,8 @@ description: |
 * Git, Github, JIRA, SVN
 * Bitrise, Jenkins CI
 
-## Languages (the spoken ones)
+## Spoken Languages
 
 * English
 * Czech
 * Slovak
-
-
-

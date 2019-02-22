@@ -6,10 +6,18 @@ title: Work Experience
 description: |
 ---
 ## iFit, Logan, UT
-####  Mobile Developer, 2016 - now
-* Develop and maintain a cross platform (Android and iOS) application with Xamarin
-* Use REST APIs and SQL database
-* Develop in an agile environment, communicate and resolve bugs with testers and automation engineers
+####  Mobile Developer, 2017 - now
+* Developed and maintain cross platform (Android and iOS) applications with Xamarin
+* Used REST APIs, SQL database, MVVM, and async/await parallel code
+* Implemented In App Purchases through Google Play and iTunes
+* Used ReactiveX to make a responsive UI experience
+* Worked with mobile Bluetooth LE stack to communicate with fitness equipment
+
+## Pony Express Productions, Logan, UT
+#### Software Developer, 2017-2017
+* Developed a native Android application to help organize family activities
+* Maintained a kiosk-like Android application for managing in-storecustomer loyalty programs
+* Added new features to a legacy ASP.NET website used by a large manufacturing company
 
 ## Utah State University, Logan, UT
 #### CS Lab Section Leader, 2016
@@ -23,9 +31,7 @@ description: |
 #### Software Development Intern, 2016
 
 * Developed a specialized reporting system for investment accounting
-* Saved calculated investment data into an SQL database
-* Implemented a REST API web service
-* Focus on scalability, reliability and maintainabilty
+* Extracted investment data, performed calculations and saved into an SQL database
 * Developed a modern web application using Angular 2 and TypeScript
 
 ## Icon Health & Fitness, Logan, UT
