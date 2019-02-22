@@ -12,6 +12,7 @@ description: |
 * Libraries - Android Jetpack, Retrofit, Dagger
 * Automation testing (Espresso, Xamarin UITest)
 * Hockey App deployment
+* Crash monitoring (VS App Center, Raygun)
 
 ## Web
 
@@ -29,6 +30,7 @@ description: |
 * Bash, Python
 * Git, Github, JIRA, SVN
 * Bitrise, Jenkins CI
+* Dependency injection/IoC - Dagger, MvvmCross, Guice
 
 ## Spoken Languages
 
