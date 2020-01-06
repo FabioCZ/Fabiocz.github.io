@@ -5,8 +5,12 @@ category: CV
 title: Work Experience
 description: |
 ---
+## Groupon, Chicago, IL
+####  Software Development Engineer - Android, 2019 - now
+* Develop a top rated e-commerce Android application for daily deals.
+
 ## iFit, Logan, UT
-####  Mobile Developer, 2017 - now
+####  Mobile Developer, 2017 - 2019
 * Developed and maintain cross platform (Android and iOS) applications with Xamarin
 * Used REST APIs, SQL database, MVVM, and async/await parallel code
 * Implemented In App Purchases through Google Play and iTunes
