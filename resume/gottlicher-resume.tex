@@ -17,7 +17,6 @@
 \usepackage{verbatim}
 \usepackage[pdftex]{hyperref}
 \usepackage{fontspec}
-\newfontfamily\FA[Path=/usr/share/fonts/opentype/font-awesome/,Extension=.otf]{FontAwesome}
 \usepackage{fontawesome}
 \hypersetup{
     colorlinks,%
@@ -39,7 +38,7 @@
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{0.375in}
 \addtolength{\textwidth}{0.5in}
-\addtolength{\topmargin}{-.475in}
+\addtolength{\topmargin}{-.375in}
 \addtolength{\textheight}{0.75in}
 
 %-----------------------------------------------------------
@@ -69,64 +68,91 @@
 \newcommand{\mywebheader}{
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 	\textbf{\href{http://www.gottlicher.com/}{\LARGE Keano F G{\" o}ttlicher}} & \faPhone \ (435) 227-5329 \faHome \ Chicago, IL\\
-	{\texttt{{Software Developer}}} & \faEnvelope \ \href{mailto:g.fabio.cz@gmail.com}{g.fabio.cz@gmail.com} \faGlobe \  \href{http://www.gottlicher.com}{gottlicher.com}\\
+	{\footnotesize \texttt{{Android Developer}}} & \faEnvelope \ \href{mailto:g.fabio.cz@gmail.com}{g.fabio.cz@gmail.com} \faGlobe \  \href{http://www.gottlicher.com}{gottlicher.com}\\
 	  & \faGithub \  \href{http://www.github.com/FabioCZ}{github.com/FabioCZ} \faLinkedin \  \href{http://www.linkedin.com/in/FabioCZ}{linkedin.com/in/FabioCZ}
 	\end{tabular*}
 \\
 \vspace{0.1in}}
+\newcommand{\CS}{C\nolinebreak\hspace{-.05em}\raisebox{.6ex}{\tiny\bf \#}}
 
 \mywebheader
+
 
 %%%%%%%%%%%%%%%%%%%%%%
 \resheading{Work Experience}
 	\begin{itemize}
 		\item 
-		\ressubheading{\href{http://www.ifit.com}{iFit}}{Logan, UT; Chicago, IL}{Senior Mobile Developer}{Jan 2017 -- present}
+		\ressubheading{\href{http://www.yum.dev}{Yum! Brands}}{Chicago, IL}{Senior \& Staff Software Engineer, Android}{Jan 2021 -- Present}
 		{ \footnotesize
 			\begin{itemize}
-				\resitem{Developed and maintain cross platform (Android and iOS) applications with Xamarin}
-				\resitem{Used REST APIs, SQL database, MVVM, and async/await parallel code}
+                \resitem{Promoted to Staff Software Engineer in February 2023}
+                \resitem{Developed, Deployed and Maintained a modern Android-based Point of Sale (POS) system to 8,000+ Taco Bell U.S. locations and other Yum! Brands restaurants}
+                \resitem{Held role as a squad lead on a sub-team with high level of code and defect ownership and team mentoring}
+                \resitem{Ensured adoption of modern Android development practices on the team - Kotlin, Compose, Coroutines, MVVM, Modularization, Testing}
+                \resitem{Helped implement a peer-to-peer based in-restaurant data replication system backed by Couchbase database}
+                \resitem{Contributed to cloud synchronization architecture using Couchbase, MQTT and GraphQL based APIs}
+                \resitem{Architected an industry leading customer loyalty system on the POS}
+                \resitem{Led the internship program on the team and contributed to internal training of other Yum! Brands employees in Android development}
+                \resitem{Monitored and debugged production deployment status to ensure a high uptime and proactively helped asses outages}
+                \resitem{Implemented hardware integrations with receipt printers, cash drawers, card payment terminals and more}
+			\end{itemize}
+		}
+		\item 
+		\ressubheading{\href{http://www.groupon.com}{Groupon}}{Chicago, IL}{Software Development Engineer, Android}{Jul 2019 -- Dec 2020}
+		{ \footnotesize
+			\begin{itemize}
+				\resitem{Maintained a large Android native application with over 200m downloads, 4.6 star rating and millions of daily users}
+				\resitem{Led the modernization of the search experience by exposing a Google map with results in addition to results list}
+				\resitem{Frequently mentored other team members on Android framework and best architecture practices}
+				% \resitem{Collaborated with QA, product managers and designers through a scrum-based workflow}
+				     \resitem{Improved Groupon's Jenkins CI flow by adding automated code quality tasks on each build}
+				\resitem{Routinely implemented new features with AB testing and conversion tracking metrics}
+				% \resitem{Responded to oncall alerts by investigating production issues and leading efforts to deploy patches}
+			\end{itemize}
+		}
+		\item 
+		\ressubheading{\href{http://www.ifit.com}{iFit}}{Logan, UT}{Mobile Developer}{Jan 2017 -- Jul 2019}
+		{ \footnotesize
+			\begin{itemize}
+				\resitem{Developed and maintained cross platform (Android and iOS) applications with Xamarin}
+				\resitem{Used REST APIs, SQL database, MVVM, ReactiveX, Bluetooth LE, and async/await parallel code}
 				\resitem{Implemented In App Purchases through Google Play and iTunes}
-				\resitem{Used ReactiveX to make a responsive UI experience}
-				\resitem{Worked with mobile Bluetooth LE stack to communicate with fitness equipment}
+				% \resitem{Used MVVM with ReactiveX to make a responsive UI experience}
+				    \resitem{Worked with mobile Bluetooth LE stack to communicate with fitness equipment}
 			\end{itemize}
 		}
-		\item 
-		\ressubheading{\href{http://www.pxp200.com}{Pony Express Productions}}{Logan, UT}{Software Developer}{May 2017 -- Nov 2017}
-		{ \footnotesize
-			\begin{itemize}
-				\resitem{Developed a native Android application to help organize family activities}
-				\resitem{Maintained a kiosk-like Android application for managing in-store customer loyalty programs}
-				\resitem{Added new features to a legacy ASP.NET website used by a large manufacturing company}
-			\end{itemize}
-		}
-		\item 
-		\ressubheading{\href{http://www.cs.usu.edu}{Utah State University}}{Logan, UT}{Computer Science Lab Section Leader}{Aug 2016 -- Dec 2016}
-		{ \footnotesize
-			\begin{itemize}
-				\resitem{Instructed multiple 25-student lab groups twice a week as well as helped students one-on-one}
-				\resitem{Contributed code to an automated homework grading server}
-			\end{itemize}
-		}
-		\item 
-		\ressubheading{\href{http://www.clearwateranalytics.com}{Clearwater Analytics}}{Boise, ID}{Software Development Intern}{May 2016 -- Aug 2016}
-		{ \footnotesize
-			\begin{itemize}
-				\resitem{Developed a specialized reporting system for investment accounting}
-				\resitem{Extracted investment data, performed calculations and saved into an SQL database}
-				\resitem{Developed a modern web application using Angular 2 and TypeScript}
-			\end{itemize}
-		}
-		\item 
-			\ressubheading{\href{http://www.iconhealthandfitness.com}{Icon Health \& Fitness, Inc.}}{Logan, UT}{Software Technician}{May 2014 -- Apr 2016}
-				{ \footnotesize
-				\begin{itemize}
-					\resitem{Android and iOS UI Automation for regression testing}
-					\resitem{Set up deployment on a Continuous Integration server and results management, now used department-wide}
-					\resitem{Managed a project on a small agile team, and training other developers in version control and software architecture}
-					\resitem{Extensive knowledge of Bluetooth wearables and connected fitness equipment}
-				\end{itemize}
-				}
+% 		\item 
+% 		\ressubheading{\href{http://www.cs.usu.edu}{Utah State University}}{Logan, UT}{Computer Science Lab Section Leader}{Aug 2016 -- Dec 2016}
+% 		{ \footnotesize
+% 			\begin{itemize}
+% 				\resitem{Instructed multiple 25-student lab groups twice a week}
+% 				\resitem{Contributed to an automated homework grading server}
+% 				\resitem{Managed online course page and grades}
+% 				\resitem{Helped students one-on-one to understand basic programming constructs}
+% 			\end{itemize}
+% 		}
+% 		\item 
+% 		\ressubheading{\href{http://www.clearwateranalytics.com}{Clearwater Analytics}}{Boise, ID}{Software Development Intern}{May 2016 -- Aug 2016}
+% 		{ \footnotesize
+% 			\begin{itemize}
+% 				\resitem{Developed a specialized reporting system for investment accounting}
+% 				\resitem{Saved calculated investment data into an SQL database}
+% 				% \resitem{Implemented a REST API web service}
+% 				% \resitem{Focus on scalability, reliability and maintainabilty}
+% 				\resitem{Developed a modern web application using Angular 2 and TypeScript}
+% 			\end{itemize}
+% 		}
+% 		\item 
+% 			\ressubheading{\href{http://www.iconhealthandfitness.com}{Icon Health \& Fitness, Inc.}}{Logan, UT}{Software Technician}{May 2014 -- Apr 2016}
+% 				{ \footnotesize
+% 				\begin{itemize}
+% 					\resitem{Android and iOS UI Automation for regression testing}
+% 					\resitem{Set up deployment on a Continuous Integration server and results management, now used department-wide}
+% 					\resitem{Managed a project on a small agile team, and training other developers in github code management}
+% 					\resitem{Communicated bugs and other code issues to developers through an issue tracker and at scrum meetings}
+% 					\resitem{Extensive knowledge of Bluetooth wearables and connected fitness equipment}
+% 				\end{itemize}
+% 				}
 		%%\item 
 		%%	\ressubheading{\href{http://billa.cz}{Billa Czech Republic, s.r.o.}}{Zl{\' i}n, Czech Republic}{Cashier}{Mar 2013 -- Jul 2013}
 		%%		{ \footnotesize
@@ -139,51 +165,69 @@
 
 	\end{itemize}  % End Experience list
 
-
 %%%%%%%%%%%%%%%%%%%%%%
 \resheading{Education}
 	\begin{itemize}
 		\item
-			\ressubheading{\href{http://www.usu.edu}{Utah State University}}{Logan, UT}{\href{http://www.cs.usu.edu}{Bachelor of Science in Computer Science, GPA: 3.65}}{Aug 2013 -- Dec 2016}
+			\ressubheading{\href{http://www.usu.edu}{Utah State University}}{Logan, UT}{\href{http://www.cs.usu.edu}{Bachelor of Science in Computer Science}}{Aug 2013 -- Dec 2016}
 				{ \footnotesize
 				\begin{itemize}
-					\resitem{Key Courses: Advanced Algorithms, GUI Development in C\#, Operating Systems and Concurrency, Software Engineering, Game Development, Compiler Construction, Object Oriented Programming}
+					\resitem{Key Courses: Advanced Algorithms, GUI Development in \CS, Operating Systems and Concurrency, Software Engineering, Game Development, Compiler Construction, Object Oriented Programming}
+					\resitem{Dean's List, GPA: 3.65, ACT: 35}
 					\resitem{Extracurricular: Sustainability Club, Uncommon Collective (Community Improvement Volunteering), Attended Hack UState hackathons - 2\textsuperscript{nd} place at the Spring 2016 Hackathon}
 				\end{itemize}
 				}
-%		\item
-%			\ressubheading{\href{http://www.intechchs.org}{InTech Collegiate High School}}{North Logan, UT}{{GPA:3.94}}{Aug 2009 -- Dec 2012}
-%				{ \footnotesize
-%				\begin{itemize}
-%					\resitem{Key Courses: Principles of Engineering, Robotics and Automation, AP Calculus}
-%					\resitem{Achievements: Honor Roll, National Honor Society.}
-%				\end{itemize}
-%				}
+		% \item
+		% 	\ressubheading{\href{http://www.intechchs.org}{InTech Collegiate High School}}{North Logan, UT}{{GPA:3.94}}{Aug 2009 -- Dec 2012}
+		% 		{ \footnotesize
+		% 		\begin{itemize}
+		% 			\resitem{Key Courses: Principles of Engineering, Robotics and Automation, AP Calculus}
+		% 			\resitem{Achievements: Honor Roll, National Honor Society.}
+		% 		\end{itemize}
+		% 		}
 	\end{itemize} % End Education list
+	
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%				SKILLS				%%%%%%		
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Skills}
 	\begin{description}
-		\item[Mobile development:] { Java, Kotlin, Dagger, Retrofit, Android Jetpack,
-			SQLite, Android Studio, XCode, C\#, Xamarin, MvvmCross, UWP
+			\item[Android:] { 
+			Native \& Cross-platform Development, Android Jetpack, Compose, Lifecycle, Kotlin, Coroutines, JSON serialization, RXJava, Couchbase DB, MDM,  Xamarin
 		}
-		\item[Testing:] { Espresso, Xamarin.UITest, NUnit, JUnit, TestRail
+		\item[Other Technologies:] { Java, SQL/SQLite, \CS, , TypeScript, Angular, HTML/CSS, Regex, Bash, 
+			Git, \href{http://jenkins-ci.org/}{Jenkins CI}, Gitlab CI, \CS, \LaTeX, JIRA, Liquibase, Datadog
 		}
-		\item[Other technologies:] { TypeScript, Angular,  SQL, HTML/CSS, Regex, Bash, 
-			Git, Jenkins CI, JIRA, Liquibase, Python, Windows Forms, ReactiveX
+		\item[Languages:] { 
+			English, Czech
 		}
 	\end{description} % End Skills list
 
-% \resheading{Open Source Projects and Contributions}
-% % \textit{Available on {\href{https://github.com/FabioCZ}{github.com/FabioCZ}}}
+% \resheading{Notable Projects}
 % \begin{description}
-% 	\item[{\href{https://github.com/FabioCZ/NotificationRepeater}{Notification Repeater}}]{ A workaround application for Xiaomi's Android implementation, which fixed a bug preventing certain notifications from being shown. Downloaded by 10k+ users and covered by several tech blogs}
-% 	\item[{\href{https://github.com/FabioCZ/eLTrack}{eLTrack}}]{ An Android application that uses geolocation to display L train arrivals. Writen in Kotlin with Android Jetpack components}
-% 	% \item[{\href{https://github.com/FabioCZ/ifit-pedaler-server}{iFit Pedaler Server}}]{ A lightweight Python Flask server to run on a Raspberry Pi, connected to an excercise bike to simulate a user pedaling}
-% \item[{\href{https://github.com/angularsen/UnitsNet}{UnitsNet}}]{Popular .NET package to help with units of measurment. Contributed several unit definitions with unit tests.}
+% 	\item[{\href{https://github.com/FabioCZ/NotificationRepeater}{Notification Repeater}}]{ A native Android application that was used to overcome a notification system bug in an earlier version of Android MIUI skin. Featured on XDA Developers news site and downloaded by 15k+ users. }
+% 	\item[{\href{https://czechcuisineintheusa.com}{CzechCuisineInTheUsa.com}}]{ An Angular web application for a Chicago-based business to facilitate online ordering of food delivery. Backed by Firebase. }
 % \end{description}	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%				LINKS				%%%%%%		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\resheading{Links}
+%\begin{description}
+%	\item[GitHub:] {\href{http://github.com/FabioCZ}{github.com/FabioCZ}
+%	}
+%	\item[LinkedIn:] {\href{http://www.linkedin.com/in/FabioCZ}{linkedin.com/in/FabioCZ}
+%	}
+%\end{description} % End Skills list
+
+		
+%\resheading{References} 	
+%		\begin{description}
+%		\item[Quinn Vellinga] {{ Test Engineering Supervisor,Icon Health \& Fitness, quinn@ifit.com, 435-880-9938 }}
+%		\item[Todd Milovich] {{ Education Outreach Program Coordinator, Utah State University, 435-770-0454}}
+%	\end{description} % End Skills list
+%\end{document}
 
 
 \end{document}
