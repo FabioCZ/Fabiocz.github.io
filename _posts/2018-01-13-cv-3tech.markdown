@@ -7,12 +7,15 @@ description: |
 ---
 ## Mobile
 
-* Android Native - Java, Kotlin
+* Android Native - Kotlin, Java
+* Android Jetpack (Compose, DataStore, Room)
+* Kotlin Coroutines, Ktor, Mockk, detekt
+* Couchbase, SQLite
 * Xamarin Android, iOS, Forms
-* Libraries - Android Jetpack, Retrofit, Dagger
+* DI - Retrofit, Dagger, Coin
 * Automation testing (Espresso, Xamarin UITest)
-* Hockey App deployment
-* Crash monitoring (VS App Center, Raygun)
+* Hockey App, Updraft deployment
+* Crash and Log monitoring (VS App Center, Raygun, Datadog, Embrace)
 
 ## Web
 
@@ -37,3 +40,4 @@ description: |
 * English
 * Czech
 * Slovak
+
