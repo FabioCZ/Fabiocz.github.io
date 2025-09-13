@@ -12,7 +12,7 @@ description: |
 A simple Node.js server backed by Firebase database to monitor the on-schedule performance of Chicago's CTA Blue Line trains amidst the post-pandemic transit crisis in the city, used by [Commuters Take Action](https://ctaction.org)
 
 ## Chi L Track for Tibyt
-### [github.com/FabioCZ/tidbyt-chi-l-track](https://github.com/FabioCZ/tidbyt-chi-l-track)
+#### [github.com/FabioCZ/tidbyt-chi-l-track](https://github.com/FabioCZ/tidbyt-chi-l-track)
 
 A Starlark (Python dialect) application for a home LCD screen to show the upcoming arrivals at a selected Chicago CTA L train station
 
@@ -46,6 +46,7 @@ A Risk-like game written with C# and Universal Windows Platfroms. Part of a grou
 #### [github.com/FabioCZ/IntersectionSim](https://github.com/FabioCZ/IntersectionSim)
 
 Final project for Utah State University's Artificial Intelligence class. This application simulates a busy roundabout intersection, and uses a minimax algorithm to schedule cars to enter the roundabout with the smallest possible wait time.
+
 
 
 
