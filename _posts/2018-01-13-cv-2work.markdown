@@ -9,9 +9,10 @@ description: |
 ## Yum Brands!, Chicago, IL
 #### Staff Software Engineer, 2023 - Present
 #### Senior Software Engineer, 2021 - 2023
-– Developed, Deployed and Maintained a modern Android-based Point of Sale (POS) system to 8,000+ Taco Bell
+
+- Developed, Deployed and Maintained a modern Android-based Point of Sale (POS) system to 8,000+ Taco Bell
 U.S. locations and other Yum! Brands restaurants
-– Held role as a squad lead on a sub-team with high level of code and defect ownership and team mentoring
+- Held role as a squad lead on a sub-team with high level of code and defect ownership and team mentoring
 – Ensured adoption of modern Android development practices on the team - Kotlin, Compose, Coroutines,
 MVVM, Modularization, Testing
 – Helped implement a peer-to-peer based in-restaurant data replication system backed by Couchbase database
