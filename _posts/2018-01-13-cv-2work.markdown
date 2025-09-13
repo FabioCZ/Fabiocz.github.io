@@ -5,9 +5,34 @@ category: CV
 title: Work Experience
 description: |
 ---
+
+## Yum Brands!, Chicago, IL
+#### Staff Software Engineer, 2023 - Present
+#### Senior Software Engineer, 2021 - 2023
+– Developed, Deployed and Maintained a modern Android-based Point of Sale (POS) system to 8,000+ Taco Bell
+U.S. locations and other Yum! Brands restaurants
+– Held role as a squad lead on a sub-team with high level of code and defect ownership and team mentoring
+– Ensured adoption of modern Android development practices on the team - Kotlin, Compose, Coroutines,
+MVVM, Modularization, Testing
+– Helped implement a peer-to-peer based in-restaurant data replication system backed by Couchbase database
+– Contributed to cloud synchronization architecture using Couchbase, MQTT and GraphQL based APIs
+– Architected an industry leading customer loyalty system on the POS
+– Led the internship program on the team and contributed to internal training of other Yum! Brands employees
+in Android development
+– Monitored and debugged production deployment status to ensure a high uptime and proactively helped asses
+outages
+– Implemented hardware integrations with receipt printers, cash drawers, card payment terminals and more
+
 ## Groupon, Chicago, IL
-####  Software Development Engineer - Android, 2019 - now
-* Develop a top rated e-commerce Android application for daily deals.
+####  Software Development Engineer - Android, 2019 - 2020
+
+- Maintained a large Android native application with over 200m downloads, 4.6 star rating and millions of daily users
+- Led the modernization of the search experience by exposing a Google map with results in addition to results list
+- Frequently mentored other team members on Android framework and best architecture practices
+- Collaborated with QA, product managers and designers through a scrum-based workflow
+- Improved Groupon’s Jenkins CI flow by adding automated code quality tasks on each build
+- Routinely implemented new features with AB testing and conversion tracking metrics
+- Responded to on-call alerts by investigating production issues and leading efforts to deploy patches
 
 ## iFit, Logan, UT
 ####  Mobile Developer, 2017 - 2019
